@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/item_project_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_project_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp"
+                tools:text="有何高见" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_project_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:textColor="@android:color/holo_red_light"
+                android:text="@string/pinned"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                app:bl_corners_radius="1dp"
+                app:bl_stroke_width="0.5dp"
+                app:bl_solid_color="@color/white"
+                app:bl_stroke_color="@android:color/holo_red_light"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_project_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:textColor="@android:color/holo_red_light"
+                android:text="@string/new_text"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                app:bl_corners_radius="1dp"
+                app:bl_stroke_width="0.5dp"
+                app:bl_solid_color="@color/white"
+                app:bl_stroke_color="@android:color/holo_red_light"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_project_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:textColor="@android:color/holo_green_dark"
+                android:text="@string/answers"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                app:bl_corners_radius="1dp"
+                app:bl_stroke_width="0.5dp"
+                app:bl_solid_color="@color/white"
+                app:bl_stroke_color="@android:color/holo_green_dark"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_project_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp"
+                tools:text="1小时前" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_project_imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/themeBackground"
+                android:scaleType="centerCrop"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_project_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/iv_project_imageview"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="这是一个菜的扣jio的人写的项目" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_project_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toEndOf="@+id/iv_project_imageview"
+                android:layout_below="@+id/tv_project_title"
+                android:includeFontPadding="true"
+                android:lineSpacingMultiplier="1.4"
+                android:textColor="@color/color_666666"
+                android:ellipsize="end"
+                android:textSize="13sp"
+                android:maxLines="3"
+                tools:text="一个Jetpack结合MVVM的快速开发框架，基于MVVM模式集成谷歌官方推荐的JetPack组件库：LiveData、ViewModel、Lifecycle组件 使用Kotlin语言，添加大量拓展函数，简化代码 加入Retrofit网络请求,协程，帮你简化各种操作，让你快速开发项目" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_project_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/iv_project_collect"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp"
+                tools:text="分类·项目" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_project_collect"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                app:bl_selected_drawable="@mipmap/ic_collected"
+                app:bl_unSelected_drawable="@mipmap/ic_collect"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">common</string>
+    <string name="mvvm">MVVM</string>
+    <string name="mvp">MVP</string>
+    <string name="pinned">置顶</string>
+    <string name="new_text">新</string>
+    <string name="answers">问答</string>
+</resources>

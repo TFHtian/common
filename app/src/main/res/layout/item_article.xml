@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp"
+                tools:text="有何高见" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:textColor="@android:color/holo_red_light"
+                android:text="@string/pinned"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                app:bl_corners_radius="1dp"
+                app:bl_stroke_width="0.5dp"
+                app:bl_solid_color="@color/white"
+                app:bl_stroke_color="@android:color/holo_red_light"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:textColor="@android:color/holo_red_light"
+                android:text="@string/new_text"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                app:bl_corners_radius="1dp"
+                app:bl_stroke_width="0.5dp"
+                app:bl_solid_color="@color/white"
+                app:bl_stroke_color="@android:color/holo_red_light"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:textColor="@android:color/holo_green_dark"
+                android:text="@string/answers"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                app:bl_corners_radius="1dp"
+                app:bl_stroke_width="0.5dp"
+                app:bl_solid_color="@color/white"
+                app:bl_stroke_color="@android:color/holo_green_dark"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp"
+                tools:text="1小时前" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_home_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="这是一个根据JetpackMvvm框架开发玩Android的一个APP"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_home_type2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/iv_home_collect"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp"
+                tools:text="分类·项目" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_home_collect"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                app:bl_selected_drawable="@mipmap/ic_collected"
+                app:bl_unSelected_drawable="@mipmap/ic_collect"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

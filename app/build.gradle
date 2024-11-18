@@ -1,0 +1,97 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+def propertiesFile = rootProject.file("keystore.properties")
+def properties = new Properties()
+properties.load(new FileInputStream(propertiesFile))
+
+android {
+
+    signingConfigs {
+        release {
+            keyAlias properties['keyAlias']
+            keyPassword properties['keyPassword']
+            storeFile file(properties['storeFile'])
+            storePassword properties['storePassword']
+        }
+    }
+    namespace rootProject.ext.android.applicationId
+    compileSdk rootProject.ext.android.compileSdkVersion
+    flavorDimensions rootProject.ext.android.flavorDimensions
+
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdk rootProject.ext.android.minSdkVersion
+        targetSdk rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    applicationVariants.configureEach { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = "common-${defaultConfig.versionName}-${variant.flavorName}.apk"
+                output.outputFileName = new File("apk", fileName)
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.release
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        productFlavors.all {
+            buildConfigField "String", "CLIENT_ID", properties['CLIENT_ID']
+        }
+        dev {
+            buildConfigField "String", "APP_ID", properties['DEV_APP_ID']
+            buildConfigField "boolean", "IS_OPEN", properties['IS_DEV_OPEN']
+        }
+        prd {
+            buildConfigField "String", "APP_ID", properties['PRD_APP_ID']
+            buildConfigField "boolean", "IS_OPEN", properties['IS_PRD_OPEN']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+
+    buildFeatures {
+        //noinspection DataBindingWithoutKapt
+        dataBinding = true
+        viewBinding = true
+    }
+}
+
+dependencies {
+    api fileTree(dir: "libs", include: ["*.jar"])
+
+    // 基础配置
+    api project(':lib_common')
+    // 依赖第三方配置
+    api rootProject.ext.moduleLibs
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--===================base_title_bar=====================-->
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="title_bar_margin">16dp</dimen>
+    <dimen name="title_icon_size">20dp</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+    <dimen name="btn_text_size">16sp</dimen>
+
+    <!--===================page_state=====================-->
+    <dimen name="progress_bg_size">100dp</dimen>
+    <dimen name="progress_im_size">45dp</dimen>
+    <dimen name="page_text_size">16sp</dimen>
+    <dimen name="page_retry_margin">10dp</dimen>
+    <dimen name="page_text_margin_top">20dp</dimen>
+    <dimen name="dialog_loading_size">100dp</dimen>
+    <dimen name="dialog_loading_radius">8dp</dimen>
+    <dimen name="dialog_loading_margin">10dp</dimen>
+    <dimen name="dialog_loading_text_size">12sp</dimen>
+
+</resources>
