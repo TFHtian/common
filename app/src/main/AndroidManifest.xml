@@ -29,6 +29,8 @@
         <activity android:name=".app.feature.simplemvvm.HomeMvvmActivity"/>
 
         <activity android:name=".app.feature.simplemvp.HomeMvpActivity"/>
+
+        <activity android:name=".app.feature.keystore.KeyStoreActivity"/>
     </application>
 
 </manifest>

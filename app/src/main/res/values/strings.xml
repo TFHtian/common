@@ -5,4 +5,10 @@
     <string name="pinned">置顶</string>
     <string name="new_text">新</string>
     <string name="answers">问答</string>
+    <string name="encode_content">加密内容</string>
+    <string name="enter_encode_hint">输入加密信息</string>
+    <string name="encode">加密</string>
+    <string name="decode">解密</string>
+    <string name="encode_ciphertext">加密密文</string>
+    <string name="decode_in_writing">解密明文</string>
 </resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/themeBackground">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:text="@string/encode_content"
+                android:textSize="14sp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:hint="@string/enter_encode_hint"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_666666"
+                app:bl_corners_radius="8dp"
+                app:bl_stroke_width="1dp"
+                app:bl_solid_color="@color/white"
+                app:bl_stroke_color="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_encode"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/encode"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    app:bl_corners_radius="25dp"
+                    app:bl_solid_color="@color/base_theme"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_decode"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/decode"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    app:bl_corners_radius="25dp"
+                    app:bl_solid_color="@color/base_theme"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/color_333333"
+                android:text="@string/encode_ciphertext"
+                android:textSize="14sp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_encode_ciphertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                app:bl_corners_radius="8dp"
+                app:bl_stroke_width="1dp"
+                app:bl_solid_color="@color/white"
+                app:bl_stroke_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/color_333333"
+                android:text="@string/decode_in_writing"
+                android:textSize="14sp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_decode_in_writing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                app:bl_corners_radius="8dp"
+                app:bl_stroke_width="1dp"
+                app:bl_solid_color="@color/white"
+                app:bl_stroke_color="@color/base_theme"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
