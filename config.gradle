@@ -20,7 +20,8 @@ ext {
             rxKotlin   : "3.0.1",
             lifecycle  : "2.3.1",
             rxLifecycle: "4.0.2",
-            refresh    : "2.1.0"
+            refresh    : "2.1.0",
+            room       : "2.6.1"
     ]
 
     //androidx支持库配置
@@ -84,9 +85,9 @@ ext {
             //MMkv(本地存储数据持久化)
             "mmkv"             : "com.tencent:mmkv:1.2.10",
             //refresh(列表刷新加载)
-            "refresh-layout"   : "io.github.scwang90:refresh-layout-kernel:${dependVersion.refresh}",
-            "refresh-header"   : "io.github.scwang90:refresh-header-classics:${dependVersion.refresh}",
-            "refresh-footer"   : "io.github.scwang90:refresh-footer-classics:${dependVersion.refresh}",
+            "refreshLayout"    : "io.github.scwang90:refresh-layout-kernel:${dependVersion.refresh}",
+            "refreshHeader"    : "io.github.scwang90:refresh-header-classics:${dependVersion.refresh}",
+            "refreshFooter"    : "io.github.scwang90:refresh-footer-classics:${dependVersion.refresh}",
     ]
 
     //module使用用三方库配置
@@ -97,6 +98,9 @@ ext {
             'consecutiveScroller': 'com.github.donkingliang:ConsecutiveScroller:4.6.4',
             //BaseAdapter(列表适配)
             "baseAdapterHelper"  : "io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.1.4",
+            //room(数据本地存储持久化)
+            "roomRuntime"      : "androidx.room:room-runtime:${dependVersion.room}",
+            "roomRxjava3"      : "androidx.room:room-rxjava3:${dependVersion.room}",
     ]
 
     //依赖第三方配置

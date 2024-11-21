@@ -1,9 +1,11 @@
 package com.tian.common.app
 
+import android.content.Context
 import androidx.multidex.MultiDex
 import com.tencent.mmkv.MMKV
 import com.tian.common.app.event.AppViewModel
 import com.tian.common.app.event.EventViewModel
+import com.tian.common.app.util.ActivityManager
 import com.tian.common.app.util.KeyStoreHelper
 import com.tian.lib_common.lib_base.BaseApp
 
@@ -25,13 +27,19 @@ class App : BaseApp() {
         lateinit var appViewModelInstance: AppViewModel
     }
 
+    override fun attachBaseContext(base: Context?) {
+        instance = this
+        MultiDex.install(this)
+        super.attachBaseContext(base)
+    }
+
     override fun onCreate() {
         super.onCreate()
         MMKV.initialize(this)
         KeyStoreHelper.init(this)
-        instance = this
-        eventViewModelInstance = getAppViewModelProvider().get(EventViewModel::class.java)
-        appViewModelInstance = getAppViewModelProvider().get(AppViewModel::class.java)
-        MultiDex.install(this)
+        registerActivityLifecycleCallbacks(ActivityManager.instance)
+        eventViewModelInstance = getAppViewModelProvider()[EventViewModel::class.java]
+        appViewModelInstance = getAppViewModelProvider()[AppViewModel::class.java]
+
     }
 }

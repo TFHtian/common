@@ -31,6 +31,8 @@
         <activity android:name=".app.feature.simplemvp.HomeMvpActivity"/>
 
         <activity android:name=".app.feature.keystore.KeyStoreActivity"/>
+
+        <activity android:name=".app.feature.room.RoomActivity"/>
     </application>
 
 </manifest>

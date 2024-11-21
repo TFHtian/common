@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/themeBackground">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_insert"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/room_insert_data"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    app:bl_corners_radius="25dp"
+                    app:bl_solid_color="@color/base_theme"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_delete"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:text="@string/room_delete_data"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    app:bl_corners_radius="25dp"
+                    app:bl_solid_color="@color/base_theme"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_insert"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_update"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:text="@string/room_update_data"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    app:bl_corners_radius="25dp"
+                    app:bl_solid_color="@color/base_theme"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_query"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_insert"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_query"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:text="@string/room_query_data"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    app:bl_corners_radius="25dp"
+                    app:bl_solid_color="@color/base_theme"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_update"
+                    app:layout_constraintStart_toEndOf="@+id/tv_update"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp"
+                android:text="@string/cache_sql_data"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:minHeight="220dp"
+                android:textSize="16sp"
+                android:padding="12dp"
+                app:bl_corners_radius="12dp"
+                app:bl_stroke_width="1dp"
+                app:bl_solid_color="@color/white"
+                app:bl_stroke_color="@color/base_theme"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
