@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/themeBackground">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:gravity="center"
+            app:bl_corners_radius="12dp"
+            app:bl_solid_color="@color/white">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notification_normal"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_importance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/notification_importance"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/notification_progress"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_big_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/notification_big_text"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_big_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/notification_big_picture"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/notification_customer"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

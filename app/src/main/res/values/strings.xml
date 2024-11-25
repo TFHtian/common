@@ -18,4 +18,27 @@
     <string name="room_update_data">修改数据</string>
     <string name="room_query_data">查询数据</string>
     <string name="cache_sql_data">缓存数据库数据</string>
+    <string name="notification">Notification</string>
+    <string name="notification_normal">普通通知</string>
+    <string name="notification_importance">重要通知</string>
+    <string name="notification_progress">进度条通知</string>
+    <string name="notification_big_text">大文本通知</string>
+    <string name="notification_big_picture">大图片通知</string>
+    <string name="notification_customer">自定义通知</string>
+    <string name="notification_title">通知标题</string>
+    <string name="notification_content">通知内容</string>
+    <string name="notification_big_content">通知是Android在你的应用UI外显示的一条消息，用于向用户提供提醒、其他人的通信或其他来自你的应用的及时信息。用户可以点击通知打开你的应用，或者直接从通知中采取行动。</string>
+    <string name="notification_customer_stop">暂停</string>
+    <string name="notification_customer_complete">完成</string>
+    <string name="notification_customer_content">终日奔波苦，一刻不得闲</string>
+    <string name="notification_customer_title">凡人歌</string>
+    <string name="interval">Interval</string>
+    <string name="interval_start">开始</string>
+    <string name="interval_pause">暂停</string>
+    <string name="interval_resume">继续</string>
+    <string name="interval_reset">重置</string>
+    <string name="interval_switch">切换</string>
+    <string name="interval_stop">结束</string>
+    <string name="interval_cancel">取消</string>
+    <string name="interval_complete">时间完成</string>
 </resources>

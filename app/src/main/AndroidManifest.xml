@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:name=".app.App"
         android:allowBackup="true"
@@ -33,6 +35,10 @@
         <activity android:name=".app.feature.keystore.KeyStoreActivity"/>
 
         <activity android:name=".app.feature.room.RoomActivity"/>
+
+        <activity android:name=".app.feature.notification.NotificationActivity"/>
+
+        <activity android:name=".app.feature.interval.IntervalActivity"/>
     </application>
 
 </manifest>
