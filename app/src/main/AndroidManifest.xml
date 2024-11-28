@@ -39,6 +39,8 @@
         <activity android:name=".app.feature.notification.NotificationActivity"/>
 
         <activity android:name=".app.feature.interval.IntervalActivity"/>
+
+        <activity android:name=".app.feature.dialog.DialogActivity"/>
     </application>
 
 </manifest>
