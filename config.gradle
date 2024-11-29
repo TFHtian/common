@@ -99,8 +99,12 @@ ext {
             //BaseAdapter(列表适配)
             "baseAdapterHelper"  : "io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.1.4",
             //room(数据本地存储持久化)
-            "roomRuntime"      : "androidx.room:room-runtime:${dependVersion.room}",
-            "roomRxjava3"      : "androidx.room:room-rxjava3:${dependVersion.room}",
+            "roomRuntime"        : "androidx.room:room-runtime:${dependVersion.room}",
+            "roomRxjava3"        : "androidx.room:room-rxjava3:${dependVersion.room}",
+            //XXPermissions(权限申请管理)
+            "xxPermissions"      : "com.github.getActivity:XXPermissions:20.0",
+            //Toaster(吐司)
+            "toaster"            : "com.github.getActivity:Toaster:12.6"
     ]
 
     //依赖第三方配置
@@ -115,8 +119,6 @@ ext {
             //腾讯三方功能库
             "qmui"                 : "com.qmuiteam:qmui:2.0.0-alpha10",
             "annotation"           : "androidx.annotation:annotation:1.2.0",
-            //权限
-            "rxpermissions"        : "com.github.tbruyelle:rxpermissions:0.10.2",
             //AndroidViewAnimations
             "androidanimations"    : "com.daimajia.androidanimations:library:2.4@aar",
             //Lottie 动画

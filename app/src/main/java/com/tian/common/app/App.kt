@@ -2,6 +2,7 @@ package com.tian.common.app
 
 import android.content.Context
 import androidx.multidex.MultiDex
+import com.hjq.toast.Toaster
 import com.tencent.mmkv.MMKV
 import com.tian.common.app.event.AppViewModel
 import com.tian.common.app.event.EventViewModel
@@ -37,6 +38,7 @@ class App : BaseApp() {
         super.onCreate()
         MMKV.initialize(this)
         KeyStoreHelper.init(this)
+        Toaster.init(this)
         registerActivityLifecycleCallbacks(ActivityManager.instance)
         eventViewModelInstance = getAppViewModelProvider()[EventViewModel::class.java]
         appViewModelInstance = getAppViewModelProvider()[AppViewModel::class.java]

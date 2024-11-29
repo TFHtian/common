@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/themeBackground">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/common_title_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:gravity="center"
+            app:bl_corners_radius="12dp"
+            app:bl_solid_color="@color/white">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/permission_camera"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/permission_location"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/permission_bluetooth"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/permission_notification"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_install"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/permission_install"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/permission_wifi"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_audio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/permission_audio"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_storage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/permission_storage"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/permission_media"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:bl_corners_radius="25dp"
+                app:bl_solid_color="@color/base_theme"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

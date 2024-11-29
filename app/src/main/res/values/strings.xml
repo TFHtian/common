@@ -60,4 +60,21 @@
     <string name="dialog_position">自由定位</string>
     <string name="dialog_drop_down">下拉</string>
     <string name="dialog_side_draw">侧滑</string>
+    <string name="permission">Permission</string>
+    <string name="permission_explain">权限说明</string>
+    <string name="to_accredit">去授权</string>
+    <string name="permission_camera">申请相机权限</string>
+    <string name="permission_camera_desc">相机权限申请用途于拍照及扫码</string>
+    <string name="permission_location">申请定位权限</string>
+    <string name="permission_location_desc">定位权限申请用途于推荐附近及精准距离</string>
+    <string name="permission_description">获取权限失败，请手动授予权限</string>
+    <string name="permission_bluetooth">申请蓝牙权限</string>
+    <string name="permission_notification">申请通知权限</string>
+    <string name="permission_install">申请安装包权限</string>
+    <string name="permission_wifi">申请 WIFI 权限</string>
+    <string name="permission_audio">申请麦克风权限</string>
+    <string name="permission_storage">申请文件权限</string>
+    <string name="permission_media">申请媒体权限</string>
+    <string name="permission_apply_success">权限申请成功</string>
+    <string name="permission_apply_failed">权限申请失败</string>
 </resources>
