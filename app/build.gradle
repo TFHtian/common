@@ -97,4 +97,6 @@ dependencies {
     api rootProject.ext.moduleLibs
     // room
     kapt "androidx.room:room-compiler:${rootProject.ext.dependVersion.room}"
+    // glide
+    kapt "com.github.bumptech.glide:compiler:${rootProject.ext.dependVersion.glide}"
 }

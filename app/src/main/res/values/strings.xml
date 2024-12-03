@@ -77,4 +77,5 @@
     <string name="permission_media">申请媒体权限</string>
     <string name="permission_apply_success">权限申请成功</string>
     <string name="permission_apply_failed">权限申请失败</string>
+    <string name="image_loader">ImageLoader</string>
 </resources>

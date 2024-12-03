@@ -88,6 +88,8 @@
         <activity android:name=".app.feature.dialog.DialogActivity"/>
 
         <activity android:name=".app.feature.permission.PermissionActivity"/>
+
+        <activity android:name=".app.feature.imageloader.ImageLoaderActivity"/>
     </application>
 
 </manifest>
